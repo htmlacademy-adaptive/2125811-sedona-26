@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Формы отзывов о посещенных отелях и достопримечательностях</title>
 </head>
 
@@ -103,8 +104,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-review__impression user-experience">
-          <legend class="user-experience__title  heading">Ваше общее впечатление</legend>
+        <fieldset class="form__impression user-experience">
+          <legend class="user-experience__title  heading">Ваше общее впечатление:</legend>
           <ul class="user-experience__list">
             <li class="user-experience__item">
               <label class="control radio" for="good-experience">
@@ -129,8 +130,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-review__sights visited-places">
-          <legend class="visited-places__title  heading">Ваше общее впечатление</legend>
+        <fieldset class="form__sights visited-places">
+          <legend class="visited-places__title  heading">Посещенные достопримечательности:</legend>
           <ul class="visited-places__list">
             <li class="visited-places__item">
               <label class="visited-places__control" for="devil-bridge">Мост Дьявола</label>
@@ -146,12 +147,12 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-review emotion-users">
+        <fieldset class="form__review emotion-users">
           <legend class="emotion-users__title  heading">Опишите свои эмоции</legend>
           <textarea name="emotion-users" id="emotion-users" cols="50" rows="10"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button class="form-review__button button" type="submit">Отправить отзыв</button>
+        <button class="form__button button" type="submit">Отправить отзыв</button>
         <div class="required-fields">* — обязательные поля</div>
       </form>
     </section>
