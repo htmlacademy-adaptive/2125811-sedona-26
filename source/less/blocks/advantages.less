@@ -1,38 +1,46 @@
 /*advantages*/
 .advantages{
-
+  width: 100%;
 }
 
 .advantages__list{
+  .link-reset();
+}
 
+.advantages__image{
+  margin-top: 40px;
+  height: 100%;
+  width: 100%;
 }
 
 .advantages__item{
-
+  padding: 24px 26px;
+  background-color: @gray;
   &--accent{
-
+    background-color: @blue;
+    padding: 54px 19px 0px 19px;
   }
   &--icon{
-
+    padding: 22px 19px;
+    background-color: @white;
   }
 
 }
 
 .advantages__image-icon{
 
-
 }
 
 .advantages__title{
-
+  .heading();
   &--icon{
-
+    text-align: left;
   }
 }
 
 .advantages__description{
-
+  .description__block();
   &--icon{
-
+    text-align: left;
   }
 }
