@@ -1,6 +1,15 @@
 /*page__body*/
-.page__body{
+.page__body {
   width: 320px;
-  margin: 0;
-  font-family: @font-family-base;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
