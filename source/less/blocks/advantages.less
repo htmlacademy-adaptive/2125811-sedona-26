@@ -4,18 +4,15 @@
 }
 
 .advantages__list{
-  .link-reset();
+  .list-reset();
 }
 
 .advantages__image{
-  margin-top: 40px;
-  height: 100%;
-  width: 100%;
 }
 
 .advantages__item{
   padding: 24px 26px;
-  background-color: @gray;
+  background-color: @grey;
   &--accent{
     background-color: @blue;
     padding: 54px 19px 0px 19px;
@@ -33,14 +30,22 @@
 
 .advantages__title{
   .heading();
+
   &--icon{
     text-align: left;
+  }
+  &--accent{
+    color: @white;
   }
 }
 
 .advantages__description{
   .description__block();
+  color: @white;
   &--icon{
     text-align: left;
+  }
+  &--accent{
+    color: @white;
   }
 }
