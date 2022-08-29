@@ -1,9 +1,13 @@
 /*hero*/ /*25.08*/
 .hero{
-  background-color: #81b3d2;
-  background-image: url("../img/");
+  background-color: #89b3ce;
+  background-image: url("../../img/hero__mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/hero__tablet.jpg");
+  }
+
 }
 
 .hero__image{
