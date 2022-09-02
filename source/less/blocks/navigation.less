@@ -1,12 +1,16 @@
 /*navigation*/
 .navigation{
-  width: 100%;
+  
   &--closed{
 
   }
 
   &--nojs{
 
+  }
+  @media (min-width: @tablet-width) {
+    position: relative;
+    bottom: 96px;
   }
 }
 
@@ -33,4 +37,5 @@ cursor: pointer;
 
 .navigation__list{
   .list-reset();
+  margin: 0 auto;
 }

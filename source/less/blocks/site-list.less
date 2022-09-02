@@ -1,6 +1,43 @@
 /* site-list */
 .site-list{
+  
 
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    padding: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media (min-width: @desktop-width) {
+    width: 1037px;
+  }
+
+}
+
+.site-list__item{
+
+  @media (min-width: @tablet-width) {
+    &:nth-child(3){
+      grid-column: 4/5;
+      text-align: center;
+    }
+    &:nth-child(4){
+      text-align: right;
+    }
+  }
+}
+
+.site-list__link{
+  .link-reset();
+  &--active{
+    color: #766357;
+    cursor:default;
+  }
+  text-transform: uppercase;
+  font-weight: 700;
+  @media (min-width: @tablet-width) {
+    
+  }
 }
 
 /*

@@ -4,12 +4,21 @@
   flex-direction: column;
   justify-content: center;
   background-color: @white;
+  @media (min-width: @tablet-width) {
+    
+  }
   }
 
 
 .page-header__logo{
+  margin: 0 auto;
   height: 96px;
+  width: 185px;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    z-index: 2;
+    position: relative;
+  }
 }
 
 .page-header__logo-image{
