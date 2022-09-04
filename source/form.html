@@ -53,8 +53,8 @@
     <section class="review">
       <span class="visually-hidden">Форма отзыва о Седоне</span>
       <form class="review__form form" action="get">
-        <fieldset class="form__namе name">
-          <legend class="namе__title namе__title--font">Представьтесь:</legend>
+        <fieldset class="form__item name">
+          <legend class="fotm__title namе__title--font">Представьтесь:</legend>
           <ul class="namе__list">
             <li class="namе__item">
               <label class="namе__desc" for="first-name">Имя*:</label>
@@ -70,8 +70,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__contact contact">
-          <legend class="contacts__title contacts__title--font ">Контактная информация:</legend>
+        <fieldset class="form__item contact">
+          <legend class="form__title contacts__title--font ">Контактная информация:</legend>
           <ul class="contact__list">
             <li class="contact__item">
               <label class="contact__desc" for="phone-number">Контактный телефон*:</label>
@@ -101,8 +101,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__impression user-experience">
-          <legend class="user-experience__title ">Ваше общее впечатление:</legend>
+        <fieldset class="form__item user-experience">
+          <legend class="form__title ">Ваше общее впечатление:</legend>
           <ul class="user-experience__list">
             <li class="user-experience__item">
               <label class="control radio" for="good-experience">
@@ -127,8 +127,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__sights visited-places">
-          <legend class="visited-places__title ">Посещенные достопримечательности:</legend>
+        <fieldset class="form__item visited-places">
+          <legend class="form__title ">Посещенные достопримечательности:</legend>
           <ul class="visited-places__list">
             <li class="visited-places__item">
               <label class="visited-places__control" for="devil-bridge">Мост Дьявола</label>
@@ -144,12 +144,12 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__review emotion-users">
-          <legend class="emotion-users__title ">Опишите свои эмоции</legend>
-          <textarea name="emotion-users" id="emotion-users" cols="50" rows="10"
+        <fieldset class="form__item emotion-users">
+          <legend class="form__title">Опишите свои эмоции</legend>
+          <textarea class="emotion-users__text" name="emotion-users" id="emotion-users" cols="50" rows="10"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button class="form__button button" type="submit">Отправить отзыв</button>
+        <button class="form__item button" type="submit">Отправить отзыв</button>
         <div class="required-fields">* — обязательные поля</div>
       </form>
     </section>
