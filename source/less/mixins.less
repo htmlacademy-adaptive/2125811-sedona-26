@@ -69,3 +69,21 @@
 .display-block(){
   display: block;
 }
+
+/*position-block*//*Подтянуть основной блок к шапке*/
+.position-block(){
+  position: relative;
+  bottom: 73px;
+  @media (min-width: @tablet-width) {
+    bottom: 97px;
+  }
+}
+
+/*position-block*//*Подтянуть подвал к основному блоку*/
+.position-unblock(){
+  position: relative;
+  bottom: 73px;
+  @media (min-width: @tablet-width) {
+    bottom: 97px;
+  }
+}

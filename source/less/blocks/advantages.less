@@ -16,16 +16,6 @@
   }
 }
 
-.advantages__image {
-  .display-block();
-  @media (min-width: @tablet-width) {
-    width: 512px; /*временно*/
-  }
-  @media (min-width: @desktop-width) {
-    width: 800px; /*временно*/
-  }
-}
-
 .advantages__item {
   padding: 24px 26px;
   background-color: @grey;
@@ -48,17 +38,49 @@
       justify-content: center;
     }
   }
-  &--image{
+  &__image{
     padding: 0;
-    background-color: @white;
+
+    &--sity{
+      width: 320px;
+      height: 260px;
+      background-image: url(../../img/sedona-city--mobile.jpg);
+      @media (min-width: @tablet-width) {
+        width: 512px;
+        height: 256px;
+        background-image: url(../../img/sedona-city--tablet.jpg);
+      }
+      @media (min-width: @desktop-width) {
+        width: 800px;
+        height: 256px;
+        background-image: url(../../img/sedona-city--desktop.jpg);
+      }
+    }
+    &--bridge{
+      width: 320px;
+      height: 260px;
+      background-image: url(../../img/devil-bridge--mobile.jpg);
+      @media (min-width: @tablet-width) {
+        width: 512px;
+        height: 256px;
+        background-image: url(../../img/devil-bridge--tablet.jpg);
+      }
+      @media (min-width: @desktop-width) {
+        width: 800px;
+        height: 256px;
+        background-image: url(../../img/devil-bridge--desktop.jpg);
+      }
+    }
   }
+
+
   @media (min-width: @tablet-width) {
-    
+
     &:nth-child(2)/*img*/{
       grid-column: 2/4;
       grid-row: 1/2;
     }
-    
+
     &:nth-child(7)/*img*/{
       grid-column: 1/3;
       grid-row: 3/4;
@@ -111,8 +133,8 @@
   margin: 0 auto;
   &--icon {
     text-align: left;
-    
-    
+
+
   }
 
   &--blue-theme {

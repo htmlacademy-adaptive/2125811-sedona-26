@@ -1,6 +1,10 @@
 /*navigation*/
 .navigation{
-  
+  width: 35px;
+  margin-left: auto;
+  position: relative;
+  bottom: 81px;
+  right: 9px;
   &--closed{
 
   }
@@ -9,8 +13,10 @@
 
   }
   @media (min-width: @tablet-width) {
-    position: relative;
+    margin: 0;
+    width: 100%;
     bottom: 96px;
+    right: 0px;
   }
 }
 
@@ -24,9 +30,11 @@ cursor: pointer;
 }
 
 .navigation__wrapper{
+  display: none;
   @media (min-width: @tablet-width) {
     width: 690px;
     margin: 0 auto;
+    display: block;
   }
   @media (min-width: @desktop-width) {
     width: 1040px;
