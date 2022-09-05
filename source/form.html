@@ -14,40 +14,37 @@
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
     </a>
-    <nav class="page-header__navigation">
-      <button class="navigation__toggle button" type="button">
+    <nav class="navigation navigation--closed navigation--nojs">
+      <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.9 0H0V4H22.9V0Z" />
-          <path d="M22.9 9H0V13H22.9V9Z" />
-          <path d="M22.9 18H0V22H22.9V18Z" />
-        </svg>
+        <img class="navigation__toggle__image" src="img/menu.svg.svg" width="23" height="22" alt="Кнопка меню">
       </button>
-      <ul class="navigation__list site-list">
-        <li class="navigation__item">
-          <a class="navigation__link">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="navigation__item navigation__item--active">
-          <a class="navigation__link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link"  href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <!--Основное содержание-->
   <main class="main-container">
-    <div class="main__hero hero">
-      <img class="hero__image" src="img/SEDONA-banner.svg" width="229" height="39" alt="Баннер Седона">
-    </div>
+    <header class="main__hero hero-banner">
+      <img class="hero-banner__image" src="img/SEDONA-banner.svg" width="229" height="39" alt="Баннер Седона">
+    </header>
     <!--feedback-->
     <section class="feedback">
-      <h1 class="feedback__title heading">Оставьте свой отзыв</h1>
+      <h1 class="feedback__title">Оставьте свой отзыв</h1>
       <p class="feedback__discription">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
@@ -56,8 +53,8 @@
     <section class="review">
       <span class="visually-hidden">Форма отзыва о Седоне</span>
       <form class="review__form form" action="get">
-        <fieldset class="form__namе name">
-          <legend class="namе__title namе__title--font heading">Представьтесь:</legend>
+        <fieldset class="form__item name">
+          <legend class="fotm__title namе__title--font">Представьтесь:</legend>
           <ul class="namе__list">
             <li class="namе__item">
               <label class="namе__desc" for="first-name">Имя*:</label>
@@ -73,8 +70,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__contact contact">
-          <legend class="contacts__title contacts__title--font  heading">Контактная информация:</legend>
+        <fieldset class="form__item contact">
+          <legend class="form__title contacts__title--font ">Контактная информация:</legend>
           <ul class="contact__list">
             <li class="contact__item">
               <label class="contact__desc" for="phone-number">Контактный телефон*:</label>
@@ -104,8 +101,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__impression user-experience">
-          <legend class="user-experience__title  heading">Ваше общее впечатление:</legend>
+        <fieldset class="form__item user-experience">
+          <legend class="form__title ">Ваше общее впечатление:</legend>
           <ul class="user-experience__list">
             <li class="user-experience__item">
               <label class="control radio" for="good-experience">
@@ -130,9 +127,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__sights visited-places">
-          <legend class="visited-places__title  heading">Посещенные достопримечательности:</legend>
-          <ul class="visited-places__list">
+        <fieldset class="form__item visited-places">
+          <legend class="form__title ">Посещенные достопримечательности:</legend>
+          <ul class="v
+          isited-places__list">
             <li class="visited-places__item">
               <label class="visited-places__control" for="devil-bridge">Мост Дьявола</label>
               <input class="visited-places__input" type="checkbox" name="devil-bridge" id="devil-bridge">
@@ -147,12 +145,12 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__review emotion-users">
-          <legend class="emotion-users__title  heading">Опишите свои эмоции</legend>
-          <textarea name="emotion-users" id="emotion-users" cols="50" rows="10"
+        <fieldset class="form__item emotion-users">
+          <legend class="form__title">Опишите свои эмоции</legend>
+          <textarea class="emotion-users__text" name="emotion-users" id="emotion-users" cols="50" rows="10"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button class="form__button button" type="submit">Отправить отзыв</button>
+        <button class="form__item button" type="submit">Отправить отзыв</button>
         <div class="required-fields">* — обязательные поля</div>
       </form>
     </section>
@@ -168,19 +166,19 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img class="social__image-icon" src="img/icon-vk.svg" width="24" height="24" alt="иконка ВКонтакте.">
+              <img class="social__image-icon" src="img/icon-vk.svg" width="24" height="14" alt="иконка ВКонтакте.">
             </a>
             <span class="visually-hidden">ВКонтакте.</span>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <img class="social__image-icon" src="img/icon-telegram.svg" width="24" height="24" alt="иконка Телеграмм">
+              <img class="social__image-icon" src="img/icon-telegram.svg" width="23" height="17" alt="иконка Телеграмм">
             </a>
             <span class="visually-hidden">Телеграмм.</span>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="social__image-icon" src="img/icon-youtube.svg" width="24" height="24" alt="иконка Youtube">
+              <img class="social__image-icon" src="img/icon-youtube.svg" width="20" height="14" alt="иконка Youtube">
             </a>
             <span class="visually-hidden">Youtube.</span>
           </li>

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
@@ -13,37 +14,34 @@
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
     </a>
-    <nav class="page-header__navigation">
-      <button class="navigation__toggle button" type="button">
+    <nav class="navigation navigation--closed navigation--nojs">
+      <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.9 0H0V4H22.9V0Z" />
-          <path d="M22.9 9H0V13H22.9V9Z" />
-          <path d="M22.9 18H0V22H22.9V18Z" />
-        </svg>
+        <img class="navigation__toggle__image" src="img/menu.svg.svg" width="23" height="22" alt="Кнопка меню">
       </button>
-      <ul class="navigation__list site-list">
-        <li class="navigation__item">
-          <a class="navigation__link">Главная</a>
-        </li>
-        <li class="navigation__item navigation__item--active">
-          <a class="navigation__link" href="catalog.html">Фото и видео</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
-        </li>
-      </ul>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link"  href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <!--Основное содержание-->
   <main class="catalog">
-    <div class="catalog__hero hero">
-      <img src="img/SEDONA-banner.svg" width="229" height="39" alt="Баннер Седона">
-    </div>
+    <header class="main__headerero hero-banner">
+      <img class="hero-banner__image" src="img/SEDONA-banner.svg" width="229" height="39" alt="Баннер Седона">
+    </header>
     <!--photo-and-video-->
     <section class="photo-and-video">
       <h1 class="photo-and-video__title  heading">Фото и видео</h1>
@@ -142,19 +140,19 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img class="social__image-icon" src="img/icon-vk.svg" width="24" height="24" alt="иконка ВКонтакте.">
+              <img class="social__image-icon" src="img/icon-vk.svg" width="24" height="14" alt="иконка ВКонтакте.">
             </a>
             <span class="visually-hidden">ВКонтакте.</span>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <img class="social__image-icon" src="img/icon-telegram.svg" width="24" height="24" alt="иконка Телеграмм">
+              <img class="social__image-icon" src="img/icon-telegram.svg" width="23" height="17" alt="иконка Телеграмм">
             </a>
             <span class="visually-hidden">Телеграмм.</span>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="social__image-icon" src="img/icon-youtube.svg" width="24" height="24" alt="иконка Youtube">
+              <img class="social__image-icon" src="img/icon-youtube.svg" width="20" height="14" alt="иконка Youtube">
             </a>
             <span class="visually-hidden">Youtube.</span>
           </li>
