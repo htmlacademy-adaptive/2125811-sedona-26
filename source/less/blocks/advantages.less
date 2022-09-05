@@ -23,6 +23,9 @@
     background-color: @blue;
     padding: 54px 19px 38px 19px;
   }
+  &--white-theme{
+    padding: 44px 50px;
+  }
   &--icon{
     padding: 22px 19px;
     background-color: @white;
@@ -36,6 +39,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      &:nth-child(5){
+        margin-bottom: 0px;
+      }
     }
   }
   &__image{
@@ -75,7 +81,6 @@
 
 
   @media (min-width: @tablet-width) {
-
     &:nth-child(2)/*img*/{
       grid-column: 2/4;
       grid-row: 1/2;
@@ -145,7 +150,6 @@
   }
   @media (min-width: @tablet-width) {
     text-align: center;
-    width: 175px;
   }
   @media (min-width: @desktop-width) {
     width: 250px;
