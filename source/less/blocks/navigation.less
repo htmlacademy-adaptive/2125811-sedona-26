@@ -1,33 +1,89 @@
 /*navigation*/
 .navigation{
-  width: 35px;
-  margin-left: auto;
   position: relative;
-  bottom: 81px;
-  right: 9px;
-  &--closed{
+  min-width: 56px;
+  background-color: @white;
+  bottom: 96px;
 
-  }
-
-  &--nojs{
-
-  }
   @media (min-width: @tablet-width) {
     margin: 0;
     width: 100%;
-    bottom: 96px;
     right: 0px;
   }
 }
 
 .navigation__toggle{
-background-color: transparent;
-border: none;
-cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 45px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 @media (min-width: @tablet-width) {
   display: none;
 }
 }
+
+.navigation--closed{
+& .navigation__toggle::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  width: 22px;
+  height: 4px;
+  background-color: @blue;
+  box-shadow: 0 8px 0 0 @blue, 0 16px 0 0 @blue;
+}
+& .navigation__toggle:active::before {
+  background-color: fade(@blue, 30%);
+  box-shadow:
+    0 8px 0 0 fade(@blue, 30%),
+    0 16px 0 0 fade(@blue, 30%);
+}
+
+}
+
+.navigation--opened{
+& .navigation__toggle{
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 13px;
+    width: 23px;
+    height: 4px;
+    background-color: @white;
+  }
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+
+}
+
+}
+
+.navigation--nojs{
+
+}
+
+
 
 .navigation__wrapper{
   display: none;
