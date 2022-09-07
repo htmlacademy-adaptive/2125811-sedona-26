@@ -30,6 +30,13 @@
 }
 
 .navigation--closed{
+  @media (max-width: @mobile-width-only){
+    & .navigation__wrapper{
+      display: none;
+    }
+
+  }
+
 & .navigation__toggle::before{
   content: "";
   position: absolute;
@@ -50,6 +57,7 @@
 }
 
 .navigation--opened{
+  
 & .navigation__toggle{
   &::before,
   &::after {
@@ -86,7 +94,6 @@
 
 
 .navigation__wrapper{
-  display: none;
   @media (min-width: @tablet-width) {
     width: 690px;
     margin: 0 auto;
