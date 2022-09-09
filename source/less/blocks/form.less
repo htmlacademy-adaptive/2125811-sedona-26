@@ -1,17 +1,35 @@
 /*form*/
 .form{
-  border: 1px solid;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 .form__item{
-  border-style: none;
+  border: none;
+  border-top: 1px solid @button-disable;
+  min-width: 0;
   margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+
 }
 
 .form__title{
+  .heading();
   float: left;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.form__list{
+  float: left;
+  width: 100%;
+  .list-reset();
+}
+
+.form__button{
+  width: 100%;
+  margin-top: 57px;
+  padding: 16px 40px;
 }
