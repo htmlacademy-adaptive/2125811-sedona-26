@@ -1,46 +1,89 @@
 /*photo*/
 .photo {
-  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+  }
   }
 
 
   .photo__list {
-  .list-reset();
+    .list-reset();
+    @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   }
 
   .photo__item {
-  .list-reset();
+    .list-reset();
+    padding: 24px 20px;
+    border-top: 1px solid #E5E5E5;
+    @media (min-width: @tablet-width) {
+      border-top: none;
+      background-color: @input-color;
+      padding: 0;
   }
-
-  .photo__card {
-
-    &-1 {
-
-    }
-
-    &-2 {
-
-    }
-
-    &-3 {
-
-    }
-
-    &-4 {
-
-    }
   }
+  
 
   .photo__image {
+    margin-bottom: 13px;
+    width: 280px;
+    height: 280px;
+    background-repeat: no-repeat;
+    &--1 {
+      background-image: url(../../img/open-spaces.jpg);
+      @media (min-width: @tablet-width) {
+        width: 648px;
+        height: 400px;
+        
+        background-image: url(../../img/open-spaces--tablet.jpg);
+      }
+    }
 
+    &--2 {
+      background-image: url(../../img/flora.jpg);
+      @media (min-width: @tablet-width) {
+        width: 324px;
+        height: 267px;
+        
+        background-image: url(../../img/flora--tablet.jpg);
+      }
+    }
+
+    &--3 {
+      background-image: url(../../img/road-north.jpg);
+      @media (min-width: @tablet-width) {
+        width: 324px;
+        height: 267px;
+        
+        background-image: url(../../img/road-north--tablet.jpg);
+      }
+    }
+
+    &--4 {
+      background-image: url(../../img/devil-bridge--cot.jpg);
+      @media (min-width: @tablet-width) {
+        width: 324px;
+        height: 267px;
+        
+        background-image: url(../../img/devil-bridge--cot--tablet.jpg);
+      }
+    }
   }
 
   .photo__title {
-  .heading();
+    .heading();
+    text-align: left;
+    margin-bottom: 9px;
+    font-size: 14px;
   }
 
   .photo__discription {
-
+    .description__block();
+    text-align: left;
+    text-transform: none;
+    margin-bottom: 13px;
   }
 
   .photo__likes {

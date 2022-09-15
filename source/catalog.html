@@ -14,7 +14,7 @@
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона">
     </a>
-    <nav class="navigation navigation--closed <!--navigation--opened--> navigation--nojs">
+    <nav class="navigation navigation--closed navigation--nojs">
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -40,10 +40,11 @@
   <main class="catalog">
     <header class="main__headerero hero-banner">
       <img class="hero-banner__image" src="img/SEDONA-banner.svg" width="229" height="39" alt="Баннер Седона">
+      <div class="hero__triangle"></div>
     </header>
     <!--photo-and-video-->
     <section class="photo-and-video">
-      <h1 class="photo-and-video__title  heading">Фото и видео</h1>
+      <h1 class="photo-and-video__title">Фото и видео</h1>
       <p class="photo-and-video__discription">
         Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике
       </p>
@@ -52,9 +53,9 @@
     <section class="photo">
       <h2 class="visually-hidden">Фото</h2>
       <ul class="photo__list">
-        <li class="photo__item photo__card">
-          <img class="photo__image photo__card--1" src="img/open-spaces.jpg" alt="Фото - неродные просторы">
-          <h3 class="photo__title heading">Неродные просторы</h3>
+        <li class="photo__item">
+          <div class="photo__image photo__image--1"></div>
+          <h3 class="photo__title">Неродные просторы</h3>
           <p class="photo__discription">Автор фото: Борис</p>
           <div class="photo__likes likes">
             <button class="likes__image">
@@ -68,8 +69,8 @@
             <span class="likes__num">1350</span>
           </div>
         </li>
-        <li class="photo__item photo__card">
-          <img class="photo__image photo__card--2" src="img/flora.jpg" alt="Фото - Местная растительность">
+        <li class="photo__item">
+          <div class="photo__image photo__image--2"></div>
           <h3 class="photo__title">Местная растительность</h3>
           <p class="photo__discription">Автор фото: Сергей</p>
           <div class="photo__likes likes">
@@ -84,8 +85,8 @@
             <span class="likes__num">254</span>
           </div>
         </li>
-        <li class="photo__item photo__card">
-          <img class="photo__image photo__card--3" src="img/road-north.jpg" alt="Фото - Дорога на север">
+        <li class="photo__item">
+          <div class="photo__image photo__image--3"></div>
           <h3 class="photo__title">Дорога на север</h3>
           <p class="photo__discription">Автор фото: Петр</p>
           <div class="photo__likes likes">
@@ -100,8 +101,8 @@
             <span class="likes__num">96</span>
           </div>
         </li>
-        <li class="photo__item photo__card">
-          <img class="photo__image photo__card--4" src="img/devil-bridge--cot.jpg" alt="Фото - Мост дьявола">
+        <li class="photo__item">
+          <div class="photo__image photo__image--4"></div>
           <h3 class="photo__title">Мост дьявола</h3>
           <p class="photo__discription">Автор фото: Антон</p>
           <div class="photo__likes likes">
@@ -168,6 +169,6 @@
       </section>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
-
 </html>

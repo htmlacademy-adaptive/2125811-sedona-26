@@ -1,17 +1,17 @@
-/*modal*/ /*25.08*/
+/*modal*/
 .modal{
-  position: relative;
-  box-sizing: border-box;
+ /*  position: fixed; */
+  z-index: 5;
   margin: auto;
-  background-color: @white;
+  
 }
 
 .modal__wrapper{
-
+background-color: @white;
 }
 
 .modal__content{
-
+  padding: 45px 54px;
   &--ok{
 
   }
@@ -24,12 +24,14 @@
   margin: 0 auto;
 }
 
-.molal__caption{
-
+.modal__caption{
+  .heading();
+  margin-bottom: 26px;
 }
 
 .modal__text{
-
+  .description__block();
+  margin-bottom: 25px;
 }
 
 .modal__button-box{
