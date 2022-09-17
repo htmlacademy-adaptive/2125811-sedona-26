@@ -8,13 +8,25 @@
  }
 
  .user-experience__list{
-
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
  }
 
- .user-experience__item{
-  margin-bottom: 16px;
-  &:last-child{
-    margin-bottom: 0;
+ .control{
+  padding: 9px 0;
+  .heading();
+  text-transform: none;
+  text-align: left;
+  &__input{
+    margin: 0;
+    width: 46px;
+    height: 46px;
+    background-color: @input-color;
+    border: none;
+    &:checked {
+      
+    }
   }
-
  }
