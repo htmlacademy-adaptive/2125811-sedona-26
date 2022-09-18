@@ -1,6 +1,12 @@
 /*name*/
 .name{
   padding: 30px 20px 40px;
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-right: 43px;
+    border-right: 1px solid @button-disable;
+
+  }
 }
 
 .namе__title{
@@ -47,10 +53,10 @@
   &:focus{
     background-color: @white;
     border: 3px solid @button-disable;
-    
+
   }
   &::placeholder{
     color: rgba(0, 0, 0, .3);
   }
-  
+
 }

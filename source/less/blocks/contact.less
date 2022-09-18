@@ -1,6 +1,9 @@
 /*contact*/ /*25.08*/
 .contact{
   padding: 30px 20px 35px;
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .contacts__title{
@@ -29,6 +32,8 @@
 }
 
 .contact__input{
+  width: 222px;
+  box-sizing: border-box;
   background-color: #f2f2f2ff;
   border: 0;
   background-color: @input-color;
@@ -48,7 +53,7 @@
 &:focus{
   background-color: @white;
   border: 3px solid @button-disable;
-  
+
 }
 &::placeholder{
   color: rgba(0, 0, 0, .3);
