@@ -39,7 +39,12 @@
   <!--Основное содержание-->
   <main class="catalog">
     <header class="main__headerero hero-banner">
-      <img class="hero-banner__image" src="img/SEDONA-banner.svg" width="229" height="39" alt="Баннер Седона">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona-banner.svg" width="457">
+        <soIurce media="(min-width: 768px)" srcset="img/sedona-banner.svg" width="457">
+          <img class="hero-banner__image" src="img/sedona-banner.svg" width="229" height="39" alt="Баннер Седона">
+      </picture>
+
       <div class="hero__triangle"></div>
     </header>
     <!--photo-and-video-->
@@ -54,12 +59,12 @@
       <h2 class="visually-hidden">Фото</h2>
       <ul class="photo__list">
         <li class="photo__item photo__item--open-spaces">
-          <img class="photo__image photo__image--mobile" src="img/open-spaces.jpg" alt="Неродные просторы" width="280"
-            height="280">
-          <img class="photo__image photo__image--tablet" src="img/open-spaces--tablet.jpg" alt="Неродные просторы" width="648"
-            height="400">
-          <img class="photo__image photo__image--desktop" src="img/open-spaces--desktop.jpg" alt="Неродные просторы" width="1200"
-            height="400">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/open-spaces--desktop.jpg" width="1200">
+            <source media="(min-width: 768px)" srcset="img/open-spaces--tablet.jpg" width="648">
+            <img class="photo__image photo__image--mobile" src="img/open-spaces.jpg" alt="Неродные просторы" width="280"
+              height="280">
+          </picture>
           <div class="photo__inner">
             <h3 class="photo__title">Неродные просторы</h3>
             <p class="photo__discription">Автор фото: Борис</p>
@@ -77,12 +82,12 @@
           </div>
         </li>
         <li class="photo__item photo__item--flora">
-          <img class="photo__image photo__image--mobile" src="img/flora.jpg" alt="Местная растительность" width="280"
-            height="280">
-          <img class="photo__image photo__image--tablet" src="img/flora--tablet.jpg" alt="Неродные просторы" width="324"
-            height="267">
-          <img class="photo__image photo__image--desktop" src="img/flora--desktop.jpg" alt="Неродные просторы" width="400"
-            height="267">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/flora--desktop.jpg" width="400">
+            <source media="(min-width: 768px)" srcset="img/flora--tablet.jpg" width="324">
+            <img src="img/flora.jpg" alt="Местная растительность" width="280"
+              height="280">
+          </picture>
           <div class="photo__inner">
             <h3 class="photo__title">Местная растительность</h3>
             <p class="photo__discription">Автор фото: Сергей</p>
@@ -100,12 +105,12 @@
           </div>
         </li>
         <li class="photo__item photo__item--road-north">
-          <img class="photo__image photo__image--mobile" src="img/road-north.jpg" alt="Дорога на север" width="280"
-            height="280">
-          <img class="photo__image photo__image--tablet" src="img/road-north--tablet.jpg" alt="Неродные просторы" width="324"
-            height="267">
-          <img class="photo__image photo__image--desktop" src="img/road-north--desktop.jpg" alt="Неродные просторы" width="400"
-            height="267">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/road-north--desktop.jpg" width="400">
+            <source media="(min-width: 768px)" srcset="img/road-north--tablet.jpg" width="324">
+            <img src="img/road-north.jpg" alt="Местная растительность" width="280"
+              height="280">
+          </picture>
           <div class="photo__inner photo__inner--gray">
             <h3 class="photo__title">Дорога на север</h3>
             <p class="photo__discription">Автор фото: Петр</p>
@@ -123,12 +128,12 @@
           </div>
         </li>
         <li class="photo__item photo__item--devil-bridge">
-          <img class="photo__image photo__image--mobile" src="img/devil-bridge--cot.jpg" alt="Мост дьявола" width="280"
-            height="280">
-          <img class="photo__image photo__image--tablet" src="img/devil-bridge--cot--tablet.jpg" alt="Неродные просторы"
-            width="324" height="267">
-          <img class="photo__image photo__image--desktop" src="img/devil-bridge--cot--desktop.jpg" alt="Неродные просторы"
-            width="400" height="267">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/devil-bridge--cot--desktop.jpg" width="400">
+            <source media="(min-width: 768px)" srcset="img/devil-bridge--cot--tablet.jpg" width="324">
+            <img src="img/devil-bridge--cot.jpg" alt="Местная растительность" width="280"
+              height="280">
+          </picture>
           <div class="photo__inner">
             <h3 class="photo__title">Мост дьявола</h3>
             <p class="photo__discription">Автор фото: Антон</p>
@@ -153,7 +158,11 @@
       <p class="video__discription">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <video class="video__presentation" poster="img/video-poster.jpg" src="#" width="280" height="177"> </video>
+      <picture>
+        
+        <video class="video__presentation" poster="img/video-poster.jpg" src="#" width="280" height="177"> </video>
+      </picture>
+      
     </section>
   </main>
   <!--footer-->

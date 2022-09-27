@@ -1,26 +1,52 @@
 /*hero*/
 .hero{
   position: relative;
-  background-color: #89b3ce;
+  background-color: #aebcc5;
   background-image: url("../../img/hero__mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  height: 389px;
+
+  /* @media (min-resolution: 2dppx){
+    background-image: url("../../img/hero__mobile@2x.jpg");
+  } */
+
   @media (min-width: @tablet-width) {
     background-image: url("../../img/hero__tablet.jpg");
+    height: 518px;
+
+    /* @media (min-resolution: 2dppx){
+      background-image: url("../../img/hero__tablet@2x.jpg");
+    } */
+
   }
+
   @media (min-width: @desktop-width) {
     background-image: url("../../img/hero-desktop.jpg");
+
+    /* @media (min-resolution: 2dppx){
+      background-image: url("../../img/hero__desktop@2x.jpg");
+    } */
+
+  }
+}
+
+.hero__inner{
+  box-sizing: border-box;
+  height: 389px;
+  padding: 87px 0;
+  @media (min-width: @tablet-width) {
+    height: 518px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 84px 0;
   }
 }
 
 .hero__image{
   display: block;
-  margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 85px;
+  margin: auto;
   @media (min-width: @tablet-width) {
-    width: 465px;
-    height: 353px;
+    height: 350px;
   }
 }
 
