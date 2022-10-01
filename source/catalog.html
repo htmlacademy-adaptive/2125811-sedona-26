@@ -38,13 +38,12 @@
   </header>
   <!--Основное содержание-->
   <main class="catalog">
-    <header class="main__headerero hero-banner">
+    <header class="main__header hero-banner">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/sedona-banner.svg" width="457">
-        <soIurce media="(min-width: 768px)" srcset="img/sedona-banner.svg" width="457">
-          <img class="hero-banner__image" src="img/sedona-banner.svg" width="229" height="39" alt="Баннер Седона">
+        <source media="(min-width: 768px)" srcset="img/sedona-banner.svg" width="457">
+        <img class="hero-banner__image" src="img/sedona-banner.svg" width="229" height="39" alt="Баннер Седона">
       </picture>
-
       <div class="hero__triangle"></div>
     </header>
     <!--photo-and-video-->
@@ -60,10 +59,12 @@
       <ul class="photo__list">
         <li class="photo__item photo__item--open-spaces">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/open-spaces--desktop.jpg" width="1200">
-            <source media="(min-width: 768px)" srcset="img/open-spaces--tablet.jpg" width="648">
-            <img class="photo__image photo__image--mobile" src="img/open-spaces.jpg" alt="Неродные просторы" width="280"
-              height="280">
+            <source media="(min-width: 1200px)"
+              srcset="img/open-spaces--desktop.jpg 1x, img/open-spaces--desktop.svg 2x" width="1200">
+            <source media="(min-width: 768px)" srcset="img/open-spaces--tablet.jpg 1x, img/open-spaces--tablet.svg 2x"
+              width="648">
+            <img class="photo__image" src="img/open-spaces.jpg" alt="Неродные просторы" width="280" height="280"
+              srcset="img/open-spaces@2x.jpg 2x">
           </picture>
           <div class="photo__inner">
             <h3 class="photo__title">Неродные просторы</h3>
@@ -83,10 +84,11 @@
         </li>
         <li class="photo__item photo__item--flora">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/flora--desktop.jpg" width="400">
-            <source media="(min-width: 768px)" srcset="img/flora--tablet.jpg" width="324">
-            <img src="img/flora.jpg" alt="Местная растительность" width="280"
-              height="280">
+            <source media="(min-width: 1200px)" srcset="img/flora--desktop.jpg 1x, img/flora--desktop.svg 2x"
+              width="400">
+            <source media="(min-width: 768px)" srcset="img/flora--tablet.jpg 1x, img/flora--tablet.svg 2x" width="324">
+            <img class="photo__image" src="img/flora.jpg" alt="Местная растительность" width="280" height="280"
+              srcset="img/flora@2x.jpg 2x">
           </picture>
           <div class="photo__inner">
             <h3 class="photo__title">Местная растительность</h3>
@@ -106,12 +108,14 @@
         </li>
         <li class="photo__item photo__item--road-north">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/road-north--desktop.jpg" width="400">
-            <source media="(min-width: 768px)" srcset="img/road-north--tablet.jpg" width="324">
-            <img src="img/road-north.jpg" alt="Местная растительность" width="280"
-              height="280">
+            <source media="(min-width: 1200px)" srcset="img/road-north--desktop.jpg 1x, img/road-north--desktop.svg 2x"
+              width="400">
+            <source media="(min-width: 768px)" srcset="img/road-north--tablet.jpg 1x, img/road-north--tablet.svg 2x"
+              width="324">
+            <img class="photo__image" src="img/road-north.jpg" alt="Местная растительность" width="280" height="280"
+              srcset="img/road-north@2x.jpg 2x">
           </picture>
-          <div class="photo__inner photo__inner--gray">
+          <div class="photo__inner">
             <h3 class="photo__title">Дорога на север</h3>
             <p class="photo__discription">Автор фото: Петр</p>
             <div class="photo__likes likes">
@@ -129,10 +133,12 @@
         </li>
         <li class="photo__item photo__item--devil-bridge">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/devil-bridge--cot--desktop.jpg" width="400">
-            <source media="(min-width: 768px)" srcset="img/devil-bridge--cot--tablet.jpg" width="324">
-            <img src="img/devil-bridge--cot.jpg" alt="Местная растительность" width="280"
-              height="280">
+            <source media="(min-width: 1200px)"
+              srcset="img/devil-bridge--cot--desktop.jpg 1x, img/devil-bridge--cot--desktop.svg 2x" width="400">
+            <source media="(min-width: 768px)"
+              srcset="img/devil-bridge--cot--tablet.jpg 1x, img/devil-bridge--cot--tablet.svg 2x" width="324">
+            <img class="photo__image" src="img/devil-bridge--cot.jpg" alt="Местная растительность" width="280"
+              height="280" srcset="img/devil-bridge--cot@2x.jpg 2x">
           </picture>
           <div class="photo__inner">
             <h3 class="photo__title">Мост дьявола</h3>
@@ -159,10 +165,13 @@
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
       <picture>
-        
-        <video class="video__presentation" poster="img/video-poster.jpg" src="#" width="280" height="177"> </video>
+        <source media="(min-width: 1200px)" srcset="img/video-poster.jpg 1x, img/video-poster--desktop.svg 2x"
+          width="800">
+        <source media="(min-width: 768px)" srcset="img/video-poster.jpg 1x, img/video-poster--tablet.svg 2x"
+          width="648">
+        <img class="video__presentation" src="img/video-poster.jpg" alt="Картинка для Видео" width="280" height="177"
+          srcset="img/video-poster@2x.jpg 2x">
       </picture>
-      
     </section>
   </main>
   <!--footer-->
