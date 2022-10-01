@@ -17,12 +17,11 @@
     <nav class="navigation navigation--closed navigation--nojs">
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img class="navigation__toggle__image" src="img/menu.svg.svg" width="23" height="22" alt="Кнопка меню">
       </button>
       <div class="navigation__wrapper">
         <ul class="navigation__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link"  href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Фото и видео</a>
@@ -40,7 +39,12 @@
   <!--Основное содержание-->
   <main class="main-container">
     <header class="main__hero hero-banner">
-      <img class="hero-banner__image" src="img/SEDONA-banner.svg" width="229" height="39" alt="Баннер Седона">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona-banner.svg" width="457">
+        <source media="(min-width: 768px)" srcset="img/sedona-banner.svg" width="457">
+      <img class="hero-banner__image" src="img/sedona-banner.svg" width="229" height="39" alt="Баннер Седона">
+      </picture>
+      <div class="hero__triangle"></div>
     </header>
     <!--feedback-->
     <section class="feedback">
@@ -54,29 +58,30 @@
       <span class="visually-hidden">Форма отзыва о Седоне</span>
       <form class="review__form form" action="get">
         <fieldset class="form__item name">
-          <legend class="fotm__title namе__title--font">Представьтесь:</legend>
-          <ul class="namе__list">
+          <legend class="form__title namе__title--font">Представьтесь:</legend>
+          <ul class="form__list namе__list">
             <li class="namе__item">
               <label class="namе__desc" for="first-name">Имя*:</label>
-              <input class="name__input" id="first-name" type="text" name="first-name" required>
+              <input class="name__input" id="first-name" type="text" name="first-name" placeholder="Пётр" required>
             </li>
             <li class="namе__item">
               <label class="namе__desc" for="first-name">Фамилия*:</label>
-              <input class="name__input" id="surname" type="text" name="surname" required>
+              <input class="name__input" id="surname" type="text" name="surname" placeholder="Пустота" required>
             </li>
             <li class="namе__item">
               <label class="namе__desc" for="first-name">Отчество:</label>
-              <input class="name__input" id="patronymic" type="text" name="patronymic">
+              <input class="name__input" id="patronymic" type="text" name="patronymic" placeholder="Викторович">
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__item contact">
           <legend class="form__title contacts__title--font ">Контактная информация:</legend>
-          <ul class="contact__list">
+          <ul class="form__list contact__list">
             <li class="contact__item">
               <label class="contact__desc" for="phone-number">Контактный телефон*:</label>
               <div class="contact__input-container">
-                <input class="contact__input" id="phone-number" type="number" name="phone-number" required>
+                <input class="contact__input" id="phone-number" type="number" name="phone-number"
+                  placeholder="Введите телефон" required>
                 <span class="contact__input__icon">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -89,12 +94,13 @@
             <li class="contact__item">
               <label class="contact__desc" for="user-mail">Электронная почта*:</label>
               <div class="contact__input-container">
-                <input class="contact__input" id="user-mail" type="e-mail" name="user-mail" required>
+                <input class="contact__input" id="user-mail" type="e-mail" name="user-mail" placeholder="Введите e-mail"
+                  required>
                 <span class="contact__input__icon">
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="16" height="18" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z"
-                      fill="#010101" />
+                      d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z"
+                      fill="black" />
                   </svg>
                 </span>
               </div>
@@ -102,55 +108,42 @@
           </ul>
         </fieldset>
         <fieldset class="form__item user-experience">
-          <legend class="form__title ">Ваше общее впечатление:</legend>
-          <ul class="user-experience__list">
-            <li class="user-experience__item">
-              <label class="control radio" for="good-experience">
-                <input class="control__input" type="radio" name="good-experience" id="good-experience" checked>
-                <span class="control__icon"></span>
-                <span class="control__label"> Скорее положительное</span>
-              </label>
-            </li>
-            <li class="user-experience__item">
-              <label class="control radio" for="bad-experience">
-                <input class="control__input" type="radio" name="bad-experience" id="bad-experience">
-                <span class="control__icon"></span>
-                <span class="control__label">Скорее отрицательное</span>
-              </label>
-            </li>
-            <li class="user-experience__item">
-              <label class="control radio" for="doubtful-experience">
-                <input class="control__input" type="radio" name="doubtful-experience" id="doubtful-experience">
-                <span class="control__icon"></span>
-                <span class="control__label">Затрудняюсь ответить</span>
-              </label>
-            </li>
+          <legend class="form__title user-experience__title">Ваше общее впечатление:</legend>
+          <ul class="form__list user-experience__list">
+            <input class="control__input" type="radio" id="good-experience" name="contact" value="Good" checked>
+            <label class="control radio" for="good-experience">Скорее положительное</label>
+
+            <input class="control__input" type="radio" id="bad-experience" name="contact" value="Bad">
+            <label class="control radio" for="bad-experience">Скорее отрицательное</label>
+
+            <input class="control__input" type="radio" id="doubtful-experience" name="contact" value="Doubtful">
+            <label class="control radio" for="doubtful-experience">Затрудняюсь ответить</label>
           </ul>
         </fieldset>
         <fieldset class="form__item visited-places">
-          <legend class="form__title ">Посещенные достопримечательности:</legend>
-          <ul class="v
-          isited-places__list">
-            <li class="visited-places__item">
-              <label class="visited-places__control" for="devil-bridge">Мост Дьявола</label>
-              <input class="visited-places__input" type="checkbox" name="devil-bridge" id="devil-bridge">
-            </li>
-            <li class="visited-places__item">
-              <label class="visited-places__control" for="slide-park">Слайд-парк</label>
-              <input class="visited-places__input" type="checkbox" name="slide-park" id="slide-park">
-            </li>
-            <li class="visited-places__item">
-              <label class="visited-places__control" for="red-rocks">Красные скалы</label>
-              <input class="visited-places__input" type="checkbox" name="red-rocks" id="red-rocks">
-            </li>
+          <legend class="form__title visited-places__title">Посещенные достопримечательности:</legend>
+          <ul class="form__list visited-places__list">
+            <input class="visited-places__input" type="checkbox" name="devil-bridge" id="devil-bridge">
+            <label class="visited-places__check" for="devil-bridge">Мост Дьявола</label>
+
+            <input class="visited-places__input" type="checkbox" name="rock-bell" id="rock-bell">
+            <label class="visited-places__check" for="rock-bell">Гора-Колокол</label>
+
+            <input class="visited-places__input" type="checkbox" name="slide-park" id="slide-park">
+            <label class="visited-places__check" for="slide-park">Слайд-парк</label>
+
+            <input class="visited-places__input" type="checkbox" name="red-rocks" id="red-rocks">
+            <label class="visited-places__check" for="red-rocks">Красные скалы</label>
+
+
           </ul>
         </fieldset>
         <fieldset class="form__item emotion-users">
-          <legend class="form__title">Опишите свои эмоции</legend>
-          <textarea class="emotion-users__text" name="emotion-users" id="emotion-users" cols="50" rows="10"
+          <legend class="form__title emotion-users__title">Опишите свои эмоции</legend>
+          <textarea class="emotion-users__text" name="emotion-users" id="emotion-users" rows="4"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button class="form__item button" type="submit">Отправить отзыв</button>
+        <button class="form__button button" type="submit">Отправить отзыв</button>
         <div class="required-fields">* — обязательные поля</div>
       </form>
     </section>
@@ -196,31 +189,26 @@
     </div>
   </footer>
   <!--Всплывающие окна-->
-  <div class="modal">
-    <div class="modal__wrapper">
-      <section class="modal__content modal__content--wrong">
-        <div class="modal__box">
-          <h3 class="modal__caption">Что-то пошло не так</h3>
-          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        </div>
-        <button class=" modal__button modal__button-ok" type="button"> Ок </button>
-      </section>
+  <div class="modal-container modal-container--error">
+    <div class="modal-container__error modal-error">
+      <h2 class="modal-container__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+      <p class="modal-container__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal-error__button button button--modal-error">OK</button>
     </div>
   </div>
-  <div class="modal">
-    <div class="modal__wrapper">
-      <section class="modal__content modal__content--ok">
-        <div class="modal__box">
-          <h3 class="modal__caption">Ваш отзыв отправлен!</h3>
-          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
-            опубликуем его на сайте.</p>
-        </div>
-        <div class="modal__button-box">
-          <button class="modal__button modal__button--close" type="button"> Закрыть окно </button>
-        </div>
-      </section>
+  <div class="modal-container modal-container--success">
+    <div class="modal-container__error modal-success">
+      <div class="modal-success__info">
+        <h2 class="modal-container__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-container__discription">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее
+          время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal-success__button">
+        <button class="modal-container__button button button--modal-success">ЗАкРЫТЬ ОКНО</button>
+      </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
