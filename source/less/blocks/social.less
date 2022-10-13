@@ -18,29 +18,29 @@
   & :hover {
     background-color: #669EC0;
   }
+
+  & :active {
+    background-color: #5496BD;
+  }
 }
 
 .social__link {
   .link-reset();
   display: block;
-
-  &--vkontakte {
-    padding: 14px 12px;
-  }
-
-  &--telegram {
-    padding: 13px 12px;
-  }
-
-  &--youtube {
-    padding: 14px 14px;
-  }
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .social__image-icon {
   fill: @white;
-
-  &:active {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  & :active {
     opacity: .3;
   }
+  
 }
